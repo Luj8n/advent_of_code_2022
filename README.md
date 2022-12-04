@@ -1,11 +1,11 @@
-### To run n-th day do
+### To run n-th day part k do
 
 ```bash
-node n
+node n/k
 ```
 
 For example
 
 ```bash
-node 1
+node 3/2
 ```
