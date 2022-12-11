@@ -4,7 +4,7 @@ function overlaps(a, b) {
   return b[0] <= a[1] && b[1] >= a[0];
 }
 
-const text = fs.readFileSync("4/input.txt").toString().trim();
+const text = fs.readFileSync("04/input.txt").toString().trim();
 
 let count = 0;
 

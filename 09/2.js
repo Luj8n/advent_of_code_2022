@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const motions = fs.readFileSync("9/input.txt").toString().trim().split("\n");
+const motions = fs.readFileSync("09/input.txt").toString().trim().split("\n");
 
 const visited = new Set();
 

@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const text = fs.readFileSync("3/input.txt").toString().trim();
+const text = fs.readFileSync("03/input.txt").toString().trim();
 
 const bags = text.split("\n");
 
@@ -17,19 +17,20 @@ function value(c = "") {
 
 let sum = 0;
 
-for (let i = 0; i < bags.length / 3; i++) {
-  const group = bags.slice(i * 3, i * 3 + 3);
+bags.forEach((b) => {
+  let l = b.length;
   let hashmapuh = {};
-  group.forEach((b) => {
-    let bag = new Set(b);
-    bag.forEach((char) => {
+  for (let i = 0; i < l; i++) {
+    const char = b[i];
+    if (i < l / 2) {
       hashmapuh[char] = hashmapuh[char] ? hashmapuh[char] + 1 : 1;
-      if (hashmapuh[char] == 3) {
+    } else {
+      if (hashmapuh[char]) {
         sum += value(char);
-        return;
+        break;
       }
-    });
-  });
-}
+    }
+  }
+});
 
 console.log(sum);

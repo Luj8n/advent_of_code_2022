@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const text = fs.readFileSync("5/input.txt").toString().split("\n");
+const text = fs.readFileSync("05/input.txt").toString().split("\n");
 
 let stacks = [];
 
@@ -17,9 +17,7 @@ for (let i = 0; i < text.length; i++) {
   } else if (l[0] == "m") {
     // move
     const [_1, count, _2, from, _3, to] = l.split(" ").map((x) => +x);
-    for (let j = 0; j < count; j++) {
-      stacks[to - 1].push(stacks[from - 1].pop());
-    }
+    stacks[to - 1].push(...stacks[from - 1].splice(-count));
   } else {
     // crates
     let c = 0;

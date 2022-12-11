@@ -1,4 +1,4 @@
-### To run n-th day part k do
+### To run n-th day part k (if n has only one digit, pad it with 0)
 
 ```bash
 node n/k
@@ -7,5 +7,5 @@ node n/k
 For example
 
 ```bash
-node 3/2
+node 03/2
 ```

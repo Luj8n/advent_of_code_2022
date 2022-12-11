@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const text = fs.readFileSync("2/input.txt").toString();
+const text = fs.readFileSync("02/input.txt").toString();
 
 const rounds = text
   .trim()

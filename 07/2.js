@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const lines = fs.readFileSync("7/input.txt").toString().trim().split("\n");
+const lines = fs.readFileSync("07/input.txt").toString().trim().split("\n");
 
 let currentDir = [];
 

@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const text = fs.readFileSync("1/input.txt").toString();
+const text = fs.readFileSync("01/input.txt").toString();
 
 const calories = text.split("\n\n").map((e) =>
   e

@@ -4,7 +4,7 @@ function contains(bigger, smaller) {
   return smaller[0] >= bigger[0] && smaller[1] <= bigger[1];
 }
 
-const text = fs.readFileSync("4/input.txt").toString().trim();
+const text = fs.readFileSync("04/input.txt").toString().trim();
 
 let count = 0;
 

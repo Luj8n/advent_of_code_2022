@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const text = fs.readFileSync("6/input.txt").toString().trim();
+const text = fs.readFileSync("06/input.txt").toString().trim();
 
 const length = 14;
 

@@ -1,7 +1,7 @@
 import fs from "fs";
 
 const trees = fs
-  .readFileSync("8/input.txt")
+  .readFileSync("08/input.txt")
   .toString()
   .trim()
   .split("\n")
