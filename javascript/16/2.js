@@ -71,15 +71,15 @@ while (Q.length > 0) {
       )
         continue;
 
-      const newNewTime = myTime - distances[me][other] - 1;
+      const myNewTime = myTime - distances[me][other] - 1;
 
       Q.push([
         other,
         elephant,
-        newNewTime,
+        myNewTime,
         elephantsTime,
         { ...opened, [other]: true },
-        pressure + newNewTime * flowRates[other],
+        pressure + myNewTime * flowRates[other],
       ]);
     }
   } else {
